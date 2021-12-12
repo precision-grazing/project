@@ -4,8 +4,6 @@ arXiv: to be updated.
 
 <p align="center">
 <img src="main/plants_with_quadcopter_gazebo.jpg" width="600">
-<br>
-<b align="center">A diagram of our overarching solution.</b>
 </p>
 
 #### Abstract
