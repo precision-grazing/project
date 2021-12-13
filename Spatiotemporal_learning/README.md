@@ -1,4 +1,4 @@
-# DeepPaSTL: Spatio-Temporal Deep Learning Methods for Predicting Long-Term Pasture Terrains using Synthetic Datasets
+# Spatio-Temporal Deep Learning Methods for Predicting Long-Term Pasture Terrains using Synthetic Datasets
 
 
 ## Dependencies
