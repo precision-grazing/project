@@ -2,9 +2,11 @@
 
 <!-- [I'm an inline-style link](https://www.google.com) -->
 
-First, downlaod and catkin_make with the ROS packages at:  
+First, download the following ROS packages into your ~/catkin_ws/src:  
 1. [Hector Quadrotor ROS package](https://github.com/hsd1121/hector_quadrotor_tutorial/tree/melodic)     
 2. [Point Cloud Processing ROS package](https://github.com/hsd1121/PointCloudProcessing/tree/melodic)  
+
+This is followed by ```cd ~/catkin_ws``` and then ```catkin_make```.
 
 Please use the melodic branch for use with Ubuntu 18. The following instructions have been tested with Ubuntu 18 + ROS Melodic:
 # Pasture Generation
@@ -65,26 +67,20 @@ rosrun point_cloud_processing single_crop_box_filter /home/ksa/Desktop/Pasture_M
 rosrun point_cloud_processing plot_heights_std_dev_filter_with_max_heights /home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Python_scripts/plot_only_params.txt  <plot_till_2m_padding.pcd>
 
 - All files are generated at the path "/home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/test_pcd/"
-
+<!-- 
 #plot_all path
 /home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Python_scripts/plot_all_params.txt
 
 #plot_only path
 /home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Python_scripts/plot_only_params.txt
 
-
-#for plot only so +0.2m on each side
+ -->
+#for plot only so +0.2m perimeter is left on each side
 rosrun point_cloud_processing single_crop_box_filter /home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/plot_only_params.txt /home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/pasture.pcd
 
-
-/home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/plot_only_params.txt /home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/day91_april1_2009/april_1_day91_raw_concatenated_cloud_crop_box_filtered.pcd
-
+# to remove the points with height more than mean + 4 std dev:
 rosrun point_cloud_processing plot_heights_std_dev_filter_with_max_heights <plot_only_params> <plot_all_crop_box_filtered_point_cloud>
 
-
-rosrun point_cloud_processing turfgrass_heights /home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/pasture_10.2m_crop_box_filtered.pcd /home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/pasture_12m_crop_box_filtered.pcd
-
-rosrun point_cloud_processing plot_heights plot_only_params.txt same_height_concatenated_cloud_crop_box_filtered_all.pcd
 
 
 ```
