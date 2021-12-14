@@ -1,0 +1,681 @@
+<sdf version="1.4">
+  <world name="default">
+    <scene>
+      <ambient>0.5 0.5 0.5 1</ambient>
+      <background>0.5 0.5 0.5 1</background>
+      <shadows>false</shadows>
+    </scene>
+    <gui fullscreen="0">
+      <camera name="user_camera">
+        
+        
+        
+        <pose frame="">4.65517 -0.708308 1.57488 -0 0.521 2.156</pose>
+      </camera>
+    </gui>
+
+
+
+
+
+    <physics name="unthrottled1" type="ode">
+      <gravity>0 0 0</gravity>
+      
+      <real_time_update_rate>0</real_time_update_rate>
+      <ode>
+        <solver>
+          
+          
+          <island_threads>32</island_threads>
+        </solver>
+      </ode>
+      
+      <max_step_size>0.001</max_step_size>
+    </physics>
+    
+    
+
+
+
+    <light name="user_directional_light_0" type="directional">
+      <pose frame="">3.13274 6.52075 1 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>1</cast_shadows>
+    </light>
+
+    
+    <model name="ground_plane">
+      <link name="ground_plane_link">
+        <pose>-2 -2 0 0 0 0</pose>
+        <collision name="ground_plane_collision">
+          <geometry>
+            <mesh>
+              
+              <uri>file:///home/ksa/Desktop/Pasture_Monitoring/FINAL_SCRIPTS/generated_ground.dae</uri>
+              <scale>0.5 0.5 0.5</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="ground_plane_tri">
+          <geometry>
+            <mesh>
+              
+              <uri>file:///home/ksa/Desktop/Pasture_Monitoring/FINAL_SCRIPTS/generated_ground.dae</uri>
+              <scale>0.5 0.5 0.5</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+  <model name="grass_ryegrass1">
+      <link name="grass_ryegrass1_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass1_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_0.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass1">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_0.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass2">
+      <link name="grass_ryegrass2_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass2_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_1.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass2">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_1.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass3">
+      <link name="grass_ryegrass3_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass3_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_2.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass3">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_2.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass4">
+      <link name="grass_ryegrass4_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass4_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_3.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass4">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_3.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass5">
+      <link name="grass_ryegrass5_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass5_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_4.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass5">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_4.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass6">
+      <link name="grass_ryegrass6_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass6_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_5.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass6">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_5.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass7">
+      <link name="grass_ryegrass7_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass7_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_6.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass7">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_6.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass8">
+      <link name="grass_ryegrass8_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass8_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_7.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass8">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_7.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass9">
+      <link name="grass_ryegrass9_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass9_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_8.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass9">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_8.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass10">
+      <link name="grass_ryegrass10_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass10_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_9.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass10">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_9.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass11">
+      <link name="grass_ryegrass11_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass11_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_10.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass11">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_10.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass12">
+      <link name="grass_ryegrass12_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass12_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_11.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass12">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_11.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass13">
+      <link name="grass_ryegrass13_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass13_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_12.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass13">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_12.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass14">
+      <link name="grass_ryegrass14_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass14_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_13.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass14">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_13.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass15">
+      <link name="grass_ryegrass15_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass15_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_14.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass15">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_14.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass16">
+      <link name="grass_ryegrass16_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass16_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_15.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass16">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_15.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass17">
+      <link name="grass_ryegrass17_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass17_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_16.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass17">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_16.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass18">
+      <link name="grass_ryegrass18_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass18_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_17.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass18">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_17.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass19">
+      <link name="grass_ryegrass19_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass19_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_18.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass19">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_18.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass20">
+      <link name="grass_ryegrass20_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass20_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_19.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass20">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_19.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass21">
+      <link name="grass_ryegrass21_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass21_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_20.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass21">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_20.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass22">
+      <link name="grass_ryegrass22_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass22_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_21.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass22">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_21.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass23">
+      <link name="grass_ryegrass23_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass23_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_22.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass23">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_22.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass24">
+      <link name="grass_ryegrass24_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass24_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_23.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass24">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_23.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model><model name="grass_ryegrass25">
+      <link name="grass_ryegrass25_link">
+        <pose>0.0 0.0 0.0 0 0 0</pose>
+        <collision name="grass_ryegrass25_collision">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_24.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="grass_ryegrass25">
+          <geometry>
+            <mesh>
+              <uri>/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Day99/patches/2by2m_square_patch_index_24.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model></world>
+</sdf>
