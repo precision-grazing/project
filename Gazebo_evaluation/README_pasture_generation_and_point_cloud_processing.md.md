@@ -16,7 +16,7 @@ Please use the melodic branch for use with Ubuntu 18. The following instructions
 
 2. Run the sort_lists_into_patches.py to sort that npy array into patches of specified dimensions. (2 by 2meter by default in script)
 
-3. Use the npy arrays for patches in the blender script.
+3. Use the npy arrays for patches in the "Blender_generate_pasture.py" blender python script.
 
 4. After generating the collada files for each patch, use spawn_patches_in_world_dae.py to combine all patches in a single .world file. This .world file is copied in the ~/catkin_ws/src/hector_quadrotor_tutorial/hector_gazebo/hector_gazebo_worlds/worlds folder. 
 
@@ -49,7 +49,7 @@ rosrun point_cloud_processing concatenate_cloud /home/ksa/Data/PointCloud/9-18-2
 rosservice call /enable_motors "enable: true"
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
 
-# using autonomous navigation script
+# Copy autonomous navigation script named "```quadrotor_navigation_spawn_directly.py```" in the path ```/home/ksa/catkin_ws/src/hector_quadrotor_tutorial/hector_quadrotor/hector_quadrotor_navigation/src/quadrotor_navigation_spawn_directly.py```
 rosrun hector_quadrotor_navigation quadrotor_navigation_spawn_directly.py
 
 #viewing the cloud
