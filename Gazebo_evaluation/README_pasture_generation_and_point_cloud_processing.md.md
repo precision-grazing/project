@@ -9,6 +9,7 @@ First, download the following ROS packages into your ~/catkin_ws/src:
 This is followed by ```cd ~/catkin_ws``` and then ```catkin_make```.
 
 Please use the melodic branch for use with Ubuntu 18. The following instructions have been tested with Ubuntu 18 + ROS Melodic:
+
 # Pasture Generation
 
 1. Run the make_heights_and_xy_coords_npy_array.py file to generate the npy array for the entire pasture.  
@@ -51,7 +52,6 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 # using autonomous navigation script
 rosrun hector_quadrotor_navigation quadrotor_navigation_spawn_directly.py
 
-
 #viewing the cloud
 rosrun point_cloud_processing view_single_cloud /home/ksa/Data/PointCloud/concatenated_cloud.pcd
 
@@ -73,8 +73,6 @@ rosrun point_cloud_processing single_crop_box_filter /home/ksa/Desktop/Pasture_M
 
 # to remove the points with height more than mean + 4 std dev:
 rosrun point_cloud_processing plot_heights_std_dev_filter_with_max_heights <plot_only_params> <plot_all_crop_box_filtered_point_cloud>
-
-
 
 ```
 
