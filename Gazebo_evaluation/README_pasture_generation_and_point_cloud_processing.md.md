@@ -2,14 +2,16 @@
 
 # Pasture Generation
 
-1. Run the make_heights_and_xy_coords_npy_array.py file to amke the npy array for the entire pasture.  
+1. Run the make_heights_and_xy_coords_npy_array.py file to generate the npy array for the entire pasture.  
 
-2. Run the sort_lists_into_patches.py to sort that npy array into patches of specified dimensions.  
+2. Run the sort_lists_into_patches.py to sort that npy array into patches of specified dimensions. (2 by 2meter by default in script)
 
 3. Use the npy arrays for patches in the blender script.
 
-4. After generating the collada files for each patch, use spawn_patches_in_world_dae.py to combine all patches in a single .world file. This .world file is copied in the catkin_ws. 
+4. After generating the collada files for each patch, use spawn_patches_in_world_dae.py to combine all patches in a single .world file. This .world file is copied in the ~/catkin_ws/src/hector_quadrotor_tutorial/hector_gazebo/hector_gazebo_worlds/worlds folder. 
 
+
+---
 
 Use the following commands to run the gazebo simulation and save the point clouds using the hector quadcopter in Ubuntu 18:
 
