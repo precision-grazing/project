@@ -1,8 +1,8 @@
 # Pasture Generation and Point Cloud Processing
 
-First, downlaod and catkin_make with the ROS packages at:
-Hector Quadrotor ROS package: https://github.com/hsd1121/hector_quadrotor_tutorial/tree/melodic 
-Point Cloud Processing ROS package: https://github.com/hsd1121/PointCloudProcessing/tree/melodic 
+First, downlaod and catkin_make with the ROS packages at:  
+Hector Quadrotor ROS package: https://github.com/hsd1121/hector_quadrotor_tutorial/tree/melodic    
+Point Cloud Processing ROS package: https://github.com/hsd1121/PointCloudProcessing/tree/melodic    
 
 Please use the melodic branch for use with Ubuntu 18. The following instructions have been tested with Ubuntu 18 + ROS Melodic:
 # Pasture Generation
