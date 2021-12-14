@@ -49,7 +49,7 @@ rosrun point_cloud_processing concatenate_cloud /home/ksa/Data/PointCloud/9-18-2
 rosservice call /enable_motors "enable: true"
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
 
-# Copy autonomous navigation script named "```quadrotor_navigation_spawn_directly.py```" in the path ```/home/ksa/catkin_ws/src/hector_quadrotor_tutorial/hector_quadrotor/hector_quadrotor_navigation/src/quadrotor_navigation_spawn_directly.py```
+# Copy autonomous navigation script named "quadrotor_navigation_spawn_directly.py" in the path "~/catkin_ws/src/hector_quadrotor_tutorial/hector_quadrotor/hector_quadrotor_navigation/src/quadrotor_navigation_spawn_directly.py"
 rosrun hector_quadrotor_navigation quadrotor_navigation_spawn_directly.py
 
 #viewing the cloud
@@ -58,7 +58,7 @@ rosrun point_cloud_processing view_single_cloud /home/ksa/Data/PointCloud/concat
 ```
 
 # Processing point clouds
-Please replace ```/home/ksa``` by your own ```/home/username``` in all of the following:
+Please replace ```/home/ksa``` by your own ```/home/username``` (~/) in all of the following:
 ```
 #to use crop box filter on the point cloud for plot + 2m on each side to get plot_all
 rosrun point_cloud_processing single_crop_box_filter /home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Python_scripts/plot_all_params.txt <raw_concatenated_pcd>
