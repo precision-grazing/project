@@ -12,7 +12,7 @@ After generating the collada files for each patch, use spawn_patches_in_world_da
 
 This .world file is copied in the catkin_ws. 
 
-# Making point clouds
+# Point Cloud Generation
 ```zsh
 
 # in every new terminal do
