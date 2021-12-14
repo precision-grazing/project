@@ -67,14 +67,7 @@ rosrun point_cloud_processing single_crop_box_filter /home/ksa/Desktop/Pasture_M
 rosrun point_cloud_processing plot_heights_std_dev_filter_with_max_heights /home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Python_scripts/plot_only_params.txt  <plot_till_2m_padding.pcd>
 
 - All files are generated at the path "/home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/test_pcd/"
-<!-- 
-#plot_all path
-/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Python_scripts/plot_all_params.txt
 
-#plot_only path
-/home/ksa/Desktop/Pasture_Monitoring/Patch_generation_pipeline1April/Python_scripts/plot_only_params.txt
-
- -->
 #for plot only so +0.2m perimeter is left on each side
 rosrun point_cloud_processing single_crop_box_filter /home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/plot_only_params.txt /home/ksa/Desktop/Pasture_Monitoring/pcd_to_heights/pasture.pcd
 
