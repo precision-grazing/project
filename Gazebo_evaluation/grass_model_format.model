@@ -1,0 +1,25 @@
+<model name="grass">
+      <link name="grass_link">
+        <pose>1.5 -2.5 0 0 0 0</pose>
+        <collision name="grass_collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/ksa/grass.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="soybean">
+          <geometry>
+            <mesh>
+              <uri>file:///home/ksa/grass.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <cast_shadows>false</cast_shadows>
+        </visual>
+      </link>
+      <static>1</static>   
+      <self_collide>false</self_collide>
+      <allow_auto_disable>0</allow_auto_disable>
+</model>
