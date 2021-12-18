@@ -1,21 +1,12 @@
-function [globalIdxes, policies, vals] = makeDecision(nDays, dayLimit, perDayLimit, y_predict_mean, y_predict_std, y_predict_err, y_target)
+function [globalIdxes, policies, vals] = makeDecision
 
 % FIGURES.
 
-% compare different planning methods
-if nargin == 0
-    close all; clear; clc;
+close all; clear; clc;
 %     rng('default');
-    load('3D_predict_data_0_20211001.mat');
-    dayLimit = 3;
-    perDayLimit = 4;
-end
 
-% common parameters
-% load('3D_predict_data_0_25epoch.mat');
-% load('3D_predict_data_0.mat'); % this is 9 in, 9 out.
-% load('prediction_LiDAR_data_15_in_15_out.mat'); % this is 15 in, 15 out, old data, without noise.
-
+dayLimit = 3;
+perDayLimit = 4;
 
 isSave = 0;
 isPlot = 1;
